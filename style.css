@@ -1,0 +1,314 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #fffaf4;
+  color: #333;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ff4c29;
+  color: white;
+  padding: 10px 20px;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+nav .logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+nav ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #ffe8d6;
+}
+.hero-left img {
+  width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.hero-right {
+  margin-left: 40px;
+  max-width: 400px;
+}
+.hero-right h2 {
+  color: #ff4c29;
+  font-size: 28px;
+}
+.hero-right p {
+  font-size: 18px;
+}
+.order-btn {
+  background: #ff4c29;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* PRODUK */
+.products {
+  text-align: center;
+  padding: 40px 20px;
+}
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.product {
+  background: white;
+  border-radius: 10px;
+  padding: 50px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 250px;
+}
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+.product button {
+  background: #ff4c29;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background: #ff4c29;
+  color: white;
+  padding: 15px;
+}
+footer .contact {
+  margin-bottom: 10px;
+}
+footer img {
+  width: 30px;
+  margin: 0 8px;
+  vertical-align: middle;
+}
+
+/* FLOATING CART */
+.cart-icon {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #ff4c29;
+  color: white;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.cart-icon span {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: white;
+  color: #ff4c29;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 2px 6px;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+.modal-content {
+  background: white;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+#pay-btn {
+  background: #ff4c29;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* ===== Ikon Sosmed ===== */
+.sosmed {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.sosmed-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white; /* warna dasar ikon */
+  color: #ff4c29;          /* warna ikon */
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 22px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* saat hover */
+.sosmed-link:hover {
+  background-color: #ff4c29;
+  color: white;
+  transform: scale(1.15);
+}
+
+/* ======== RESPONSIVE DESIGN ======== */
+
+/* Tablet (max 992px) */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left img {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .hero-right {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .product-list {
+    gap: 20px;
+  }
+
+  .product {
+    width: 250px;
+    padding: 30px;
+  }
+}
+
+/* Mobile (max 768px) */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 30px 10px;
+  }
+
+  .hero-left img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .hero-right h2 {
+    font-size: 22px;
+  }
+
+  .hero-right p {
+    font-size: 16px;
+  }
+
+  /* Ubah jadi GRID biar 2 kolom di mobile */
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-items: center;
+  }
+
+  .product {
+    width: 90%;
+    max-width: 180px; /* kecilin biar pas */
+    padding: 15px;
+  }
+
+  .product img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .cart-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+  }
+}
+
+/* Mobile kecil banget (max 480px) */
+@media (max-width: 480px) {
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .product {
+    max-width: 160px;
+    padding: 12px;
+  }
+
+  .product img {
+    border-radius: 8px;
+  }
+
+  .sosmed-link {
+    width: 38px;
+    height: 38px;
+    font-size: 18px;
+  }
+}

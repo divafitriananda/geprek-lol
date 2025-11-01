@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayam Geprek LOL</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 🔥 Tambahkan ini biar ikon WhatsApp & Instagram muncul -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">
+      <img src="/images/logo.png" alt="Logo Ayam Geprek LOL">
+      <h1>Ayam Geprek LOL</h1>
+    </div>
+    <ul>
+      <li><a href="#">Beranda</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-left">
+      <img src="/images/banner.jpeg" alt="Banner Promo">
+    </div>
+    <div class="hero-right">
+      <h2>🔥 Promo Gila! 🔥</h2>
+      <p>Beli 2 Paket Ayam Geprek dapet Es Teh GRATIS!  
+      Nikmat pedasnya, hemat harganya!</p>
+      <button class="order-btn">Pesan Sekarang</button>
+    </div>
+  </section>
+
+  <!-- PRODUK -->
+  <section class="products">
+    <h2>Menu Spesial Kami</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="/images/senyum.jpeg" alt="Paket Senyum">
+        <h3>Paket Senyum</h3>
+        <p>Nasi/Mie + Ayam Geprek Lv 0 - 5 (Tanpa Tulang) + Sambal Bawang + Kremes + Timun</p>
+        <span>Rp20.000</span>
+        <button class="add-to-cart" data-name="Paket Senyum" data-price="18000">Tambah</button>
+      </div>
+      <div class="product">
+        <img src="/images/ireng.jpeg" alt="Paket Ireng">
+        <h3>Paket Ireng</h3>
+        <p>Nasi/Mie + Ayam Geprek (Tanpa Tulang) + Sambal Ireng + Kremes + Timun</p>
+        <span>Rp25.000</span>
+        <button class="add-to-cart" data-name="Paket Ireng" data-price="20000">Tambah</button>
+      </div>
+      <div class="product">
+        <img src="/images/jordan.jpeg" alt="Paket Sajojo">
+        <h3>Paket Jordan</h3>
+        <p>ANasi/Mie + Ayam Geprek (Tanpa Tulang) + Sambal Ijo Teri Medan + Telur Dadar + Kremes + Timun</p>
+        <span>Rp30.000</span>
+        <button class="add-to-cart" data-name="Paket Sajojo" data-price="25000">Tambah</button>
+      </div>
+      <div class="product">
+        <img src="/images/latah.jpeg" alt="Paket Sajojo">
+        <h3>Paket Latah</h3>
+        <p>Nasi/Mie + Ayam Geprek (Tanpa Tulang) + Sambal Matah + Kremes + Timun</p>
+        <span>Rp25.000</span>
+        <button class="add-to-cart" data-name="Paket Sajojo" data-price="25000">Tambah</button>
+      </div>
+      <div class="product">
+        <img src="/images/tawa.jpeg" alt="Paket Sajojo">
+        <h3>Paket Tawa</h3>
+        <p>Nasi/Mie + Ayam Geprek Lv 0 - 5 (Tanpa Tulang) + Sambal Bawang + Telur Dadar + Keju Mozarella + Kremes + Timun</p>
+        <span>Rp30.000</span>
+        <button class="add-to-cart" data-name="Paket Sajojo" data-price="25000">Tambah</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER KONTAK -->
+  <footer>
+  <div class="sosmed">
+    <a href="https://wa.me/6289501164480" target="_blank" class="sosmed-link">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://instagram.com/aku" target="_blank" class="sosmed-link">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+  <p>© 2025 Ayam Geprek LOL</p>
+</footer>
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+  <!-- FLOATING CART ICON -->
+  <div class="cart-icon" id="cart-icon">
+    🛒<span id="cart-count">0</span>
+  </div>
+
+  <!-- CART MODAL -->
+  <div class="modal" id="cart-modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Keranjang Belanja</h2>
+      <ul id="cart-items"></ul>
+      <p id="total"></p>
+      <button id="pay-btn">Bayar Sekarang</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
