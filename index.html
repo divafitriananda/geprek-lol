@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayam Geprek LOL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Ayam Geprek LOL</h1>
+    <p>Pedasnya Bikin Ketagihan 🔥</p>
+  </header>
+
+  <!-- Kategori Navigasi -->
+  <div class="category-grid">
+    <div class="category-box" onclick="document.getElementById('paket').scrollIntoView({behavior:'smooth'})">Paket</div>
+    <div class="category-box" onclick="document.getElementById('makanan').scrollIntoView({behavior:'smooth'})">Makanan</div>
+    <div class="category-box" onclick="document.getElementById('minuman').scrollIntoView({behavior:'smooth'})">Minuman</div>
+    <div class="category-box" onclick="document.getElementById('lainnya').scrollIntoView({behavior:'smooth'})">Lainnya</div>
+  </div>
+
+  <main>
+    <!-- BAGIAN PAKET -->
+    <section id="paket">
+      <h2>🍱 Paket Ayam Geprek LOL</h2>
+      <div class="menu-container">
+        <div class="menu-item">
+          <img src="images/senyum.png" alt="Paket Senyum">
+          <h3>😁 Paket Senyum</h3>
+          <p>Nasi + Ayam Geprek Original + Lalapan + Es Teh Manis</p>
+          <span class="price">Rp15.000</span>
+          <button data-name="Paket Senyum" data-price="15000">Tambah</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/ireng.png" alt="Paket Ireng">
+          <h3>🌑 Paket Ireng</h3>
+          <p>Ayam Geprek Bumbu Hitam + Nasi Uduk + Es Jeruk</p>
+          <span class="price">Rp18.000</span>
+          <button data-name="Paket Ireng" data-price="18000">Tambah</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/sajojo.png" alt="Paket Sajojo">
+          <h3>💃 Paket Sajojo</h3>
+          <p>Ayam Geprek Sambal Rica + Tumis Kangkung + Es Milo</p>
+          <span class="price">Rp22.000</span>
+          <button data-name="Paket Sajojo" data-price="22000">Tambah</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/latah.png" alt="Paket Latah">
+          <h3>😜 Paket Latah</h3>
+          <p>Ayam Super Pedas + Kol Goreng + Air Mineral</p>
+          <span class="price">Rp25.000</span>
+          <button data-name="Paket Latah" data-price="25000">Tambah</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/tawa.png" alt="Paket Tawa">
+          <h3>😂 Paket Tawa</h3>
+          <p>2 Potong Ayam Geprek + Nasi Liwet + Es Teh & Es Jeruk</p>
+          <span class="price">Rp27.000</span>
+          <button data-name="Paket Tawa" data-price="27000">Tambah</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- BAGIAN MAKANAN -->
+    <section id="makanan">
+      <h2>🍗 Makanan Tambahan</h2>
+      <div class="menu-container">
+        <div class="menu-item">
+          <img src="images/ayam-geprek.png" alt="Ayam Geprek Original">
+          <h3>Ayam Geprek Original</h3>
+          <p>Ayam goreng crispy digeprek sambal bawang pedas khas LOL 🔥</p>
+          <span class="price">Rp10.000</span>
+          <button data-name="Ayam Geprek Original" data-price="10000">Tambah</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/ayam-hitam.png" alt="Ayam Bumbu Hitam">
+          <h3>Ayam Bumbu Hitam</h3>
+          <p>Ayam goreng dengan saus kecap manis & lada hitam gurih 😎</p>
+          <span class="price">Rp12.000</span>
+          <button data-name="Ayam Bumbu Hitam" data-price="12000">Tambah</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/tahu.png" alt="Tahu Goreng">
+          <h3>Tahu Goreng</h3>
+          <p>Gurih dan renyah, cocok buat teman nasi!</p>
+          <span class="price">Rp4.000</span>
+          <button data-name="Tahu Goreng" data-price="4000">Tambah</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/tempe.png" alt="Tempe Goreng">
+          <h3>Tempe Goreng</h3>
+          <p>Tempe krispi khas warung geprek.</p>
+          <span class="price">Rp4.000</span>
+          <button data-name="Tempe Goreng" data-price="4000">Tambah</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/kol.png" alt="Kol Goreng">
+          <h3>Kol Goreng</h3>
+          <p>Kol digoreng hingga renyah, wajib coba!</p>
+          <span class="price">Rp4.000</span>
+          <button data-name="Kol Goreng" data-price="4000">Tambah</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- BAGIAN MINUMAN -->
+    <section id="minuman">
+      <h2>🥤 Minuman Segar</h2>
+      <div class="menu-container">
+        <div class="menu-item">
+          <img src="images/es-teh.png" alt="Es Teh Manis">
+          <h3>Es Teh Manis</h3>
+          <p>Minuman sejuta umat — manis, dingin, nyegerin!</p>
+          <span class="price">Rp5.000</span>
+          <button data-name="Es Teh Manis" data-price="5000">Tambah</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/es-jeruk.png" alt="Es Jeruk">
+          <h3>Es Jeruk Segar</h3>
+          <p>Perasan jeruk asli, asem manis netralin pedas 🔥</p>
+          <span class="price">Rp6.000</span>
+          <button data-name="Es Jeruk" data-price="6000">Tambah</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/kopisusu.png" alt="Es Kopi Susu">
+          <h3>Es Kopi Susu</h3>
+          <p>Kopi creamy dingin, nikmat buat ngilangin ngantuk 😎</p>
+          <span class="price">Rp8.000</span>
+          <button data-name="Es Kopi Susu" data-price="8000">Tambah</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/air.png" alt="Air Mineral">
+          <h3>Air Mineral</h3>
+          <p>Kesegaran murni untuk melengkapi santapan.</p>
+          <span class="price">Rp4.000</span>
+          <button data-name="Air Mineral" data-price="4000">Tambah</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- BAGIAN LAINNYA -->
+    <section id="lainnya">
+      <h2>🍴 Lainnya</h2>
+      <div class="menu-container">
+        <div class="menu-item">
+          <img src="images/lalapan.png" alt="Lalapan">
+          <h3>Lalapan Segar</h3>
+          <p>Timun, kol, kemangi bikin gigitan makin seger 🥗</p>
+          <span class="price">Rp3.000</span>
+          <button data-name="Lalapan" data-price="3000">Tambah</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/sambal.png" alt="Sambal Refill">
+          <h3>Sambal Geprek Refill</h3>
+          <p>Refill sambal bawang khas LOL biar makin pedas 🌶️</p>
+          <span class="price">Rp2.000</span>
+          <button data-name="Sambal Geprek Refill" data-price="2000">Tambah</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/kerupuk.png" alt="Kerupuk Udang">
+          <h3>Kerupuk Udang</h3>
+          <p>Renyaahhh banget! Tambahan wajib di setiap piring 😍</p>
+          <span class="price">Rp2.000</span>
+          <button data-name="Kerupuk Udang" data-price="2000">Tambah</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- KERANJANG -->
+    <section id="cart">
+      <h3 style="color:#ff6600;">🛒 Keranjang Pesanan</h3>
+      <ul id="cart-items"></ul>
+      <p id="total">Total: Rp0</p>
+      <button id="clear-cart">Hapus Semua</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ayam Geprek LOL | Rasa Juara, Harga Bersahabat</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
